@@ -1,0 +1,46 @@
+<!-- Instruction: The Romance World Cruise Line provides special gifts and celebrations for passengers who are newlyweds, as well as for those who have been married more than 40 years. Design a flowchart or psuedocode for a proram that accepts a couple's last name, ship cabin number, and number years of marriage. Display a couple's data with the message Newlywed Gift if the couple has been married one year or less, Deluxe Anniversary Package if the couple has been married 40 years or more, and no message if the couple has been married between 2 and 39 years inclusive. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <title>Romance World Cruise Line</title>
+</head>
+<body>
+  
+  <div class="container pt-5">
+    <p class="fs-4 mb-4">Romance World Cruise Line</p>
+    <div class="row">
+      <div class="col-12">
+        <label for="coupleLastName" class="form-label">Couple's last name</label>
+        <input class="form-control mt-2" type="text" id="coupleLastName"  aria-label="default input example">
+        <label for="cabinNumber" class="form-label">Ship cabin number</label>
+        <input class="form-control mt-2" type="text" id="cabinNumber" aria-label="default input example">
+        <label for="yearsMarried" class="form-label">Years of marriage</label>
+        <input class="form-control mt-2" type="text" id="yearsMarried"  aria-label="default input example">
+        <button type="button" id="submit" class="btn btn-primary mt-2">Submit</button>
+
+        <div class="result mt-4">
+          <div id="specialGifts">
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./romanceWorldCruiseLine.js"></script>
+</body>
+</html>
